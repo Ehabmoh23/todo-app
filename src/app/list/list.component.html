@@ -1,0 +1,16 @@
+<div class=" form-control bg-secondary text-black py-4 ">
+    <div class="text-center">
+        <h1>To-Do list</h1>
+        <p>lets get some work done</p>
+    </div>
+    <div class="list-display">
+        <ul>
+            <li *ngFor="let task of tasks" [ngClass]="{ 'completed': task.completed }">
+              <span class="mx-2 fs-3 bolder" [style.text-decoration]="task.completed ? 'line-through' : 'none'">{{ task.name }}</span>
+              <button class="btn btn-dark mx-2" (click)="taskComplete(task)">Complete</button>
+              <button class="btn btn-dark mx-2" (click)="removeTask(task.id)">Remove</button>
+            </li>
+          </ul>
+          
+    </div>
+</div>

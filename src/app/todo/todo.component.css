@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    height: 100vh;
+    background-size: cover;
+    background-position: 100% 100%;
+}

@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section >
+        <div class="container py-4">
+        <div class="row">
+            <div class="col-md-12 mb-5">
+                <app-addtask  (taskAdded)="addTask($event)"></app-addtask>
+            </div>
+            <div class="col-md-12 mb-3">
+                <app-list [tasks]="tasks" (taskRemoved)="removeTask($event)" (taskCompleted)="completeTask($event)"></app-list>
+            </div>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
